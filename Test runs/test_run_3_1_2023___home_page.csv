@@ -1,0 +1,8 @@
+"ID","Title","Assigned To","Automation Type","Case ID","Comment","Defects","Elapsed","Estimate","Expected Result","Forecast","Goals","In Progress","Mission","Plan","Plan ID","Preconditions","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Section Hierarchy","Status","Steps","Steps","Steps","Steps (Actual Result)","Steps (Additional Info)","Steps (Expected Result)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Status)","Steps (Step)","Steps (Step)","Template","Tested By","Tested On","Type","Version"
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then the page loads without errors","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then the header should appear","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then in the middle of the page the body should appear","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then the footer should appear","","","","","",""
+
+
+
