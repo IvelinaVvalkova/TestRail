@@ -1,0 +1,17 @@
+"ID","Title","Assigned To","Automation Type","Case ID","Comment","Defects","Elapsed","Estimate","Expected Result","Forecast","Goals","In Progress","Mission","Plan","Plan ID","Preconditions","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Section Hierarchy","Status","Steps","Steps","Steps","Steps (Actual Result)","Steps (Additional Info)","Steps (Expected Result)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Status)","Steps (Step)","Steps (Step)","Template","Tested By","Tested On","Type","Version"
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then pop-up window ""New message"" should appear on the page","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then pop-up window ""New message"" should appear on the page","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then label ""New message"" should appear on the top left of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then label ""New message"" should appear on the top left of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then label ""New message"" should appear on the top left of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Contact email"" field should appear in the modal window under the ""New message"" label","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Contact email"" field should appear in the modal window under the ""New message"" label","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Contact name"" field should appear in the modal window under the ""Contact name"" field","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Contact name"" field should appear in the modal window under the ""Contact name"" field","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Send message"" button should appear on the bottom of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Send message"" button should appear on the bottom of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Close"" button should appear on the bottom of the modal window","","","","","",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Then ""Close"" button should appear on the bottom of the modal window","","","","","",""
+
+
+
