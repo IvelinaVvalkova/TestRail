@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C44</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C47</id>
+				<title>Does the page has header</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the header should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C48</id>
+				<title>Does the page has body</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then in the middle of the page the body should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C49</id>
+				<title>Does the page has footer</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And scrolls to the end of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the footer should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C45</id>
+				<title>Does the logo exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>   </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the logo should be on the top left of the page
+
+ ![](index.php?/attachments/get/714ddcc2-834e-4868-93a3-ee716423ce21) 
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C46</id>
+				<title>Does the navigation menu exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the navigation menu should be on the top right of the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C56</id>
+				<title>Does &quot;Home&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Home&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C57</id>
+				<title>Does &quot;Contact&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Contact&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C58</id>
+				<title>Does &quot;About us&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;About us&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C59</id>
+				<title>Does &quot;Cart&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Cart&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C60</id>
+				<title>Does &quot;Log in&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Log in&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C61</id>
+				<title>Does &quot;Sign up&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Sign up&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Header-Home</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C53</id>
+				<title>Does the header-home loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Home&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Contact</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Static test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;New message&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Does label &quot;New message&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;New message&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Does &quot;Contact email&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Contact email&quot; field should appear in the modal window under the &quot;New message&quot; label</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Does &quot;Contact name&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Contact name&quot; field should appear in the modal window under the &quot;Contact name&quot; field</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Does &quot;Send message&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Send message&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Header-About us</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C6</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;About us&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Does label &quot;About us&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+
+
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;About us&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Does video exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then video should appear in the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C39</id>
+				<title>Does video play</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>And user clicks on the video</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the video should play</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Cart</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C7</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Cart&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page &quot;Cart&quot; loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Log in</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C8</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;Log in&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Does label &quot;Log in&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;Log in&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Does &quot;Username&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Username&quot; field should appear in the modal window under the &quot;Log in&quot; label</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Does &quot;Password&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Password&quot; field should appear in the modal window under the &quot;Username&quot; field</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Does &quot;Log in&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Log in&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C10</id>
+				<title>Login with valid credentials</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C11</id>
+				<title>Login with invalid credentials</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C36</id>
+				<title>Login with wrong username</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C37</id>
+				<title>Login with wrong password</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C38</id>
+				<title>Login with empty credentials</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Header-Sign up</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C9</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;Sign up&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>Does label &quot;Sign up&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;Sign up&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Does &quot;Username&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Username&quot; field should appear in the modal window under the &quot;Sign up&quot; label</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Does &quot;Password&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Password&quot; field should appear in the modal window under the &quot;Username&quot; field</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Does &quot;Sign up&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Sign up&quot; button should appear on the bottom of the modal window
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Positive cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C31</id>
+				<title>Signup with valid credentials</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C33</id>
+				<title>Signup with invalid credentials</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>Signup with wrong or already existed username</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>Signup with wrong or already existed password</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>Signup with empty credentials</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Body</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C50</id>
+				<title>Does the slide-up images exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user looks on the top center of the page</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the slide-up images should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C51</id>
+				<title>Does arrows near the slide-up images work</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>Then user clicks on the arrows near the slide-up images
+</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the images must change</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Footer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Side Bar</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C55</id>
+				<title>Does the slide bar exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on tle left of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the slide bar should be on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
