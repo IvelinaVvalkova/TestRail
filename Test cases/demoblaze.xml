@@ -28,7 +28,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C47</id>
+				<id>C45</id>
 				<title>Does the page has header</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -50,7 +50,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C48</id>
+				<id>C46</id>
 				<title>Does the page has body</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -70,7 +70,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C49</id>
+				<id>C47</id>
 				<title>Does the page has footer</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -98,7 +98,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C45</id>
+				<id>C48</id>
 				<title>Does the logo exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -124,7 +124,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C46</id>
+				<id>C49</id>
 				<title>Does the navigation menu exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -145,7 +145,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C56</id>
+				<id>C50</id>
 				<title>Does &quot;Home&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -166,7 +166,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C57</id>
+				<id>C51</id>
 				<title>Does &quot;Contact&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -187,7 +187,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C58</id>
+				<id>C52</id>
 				<title>Does &quot;About us&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -208,7 +208,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C59</id>
+				<id>C53</id>
 				<title>Does &quot;Cart&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -229,7 +229,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C60</id>
+				<id>C54</id>
 				<title>Does &quot;Log in&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -250,7 +250,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C61</id>
+				<id>C55</id>
 				<title>Does &quot;Sign up&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -277,7 +277,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C53</id>
+				<id>C56</id>
 				<title>Does the header-home loads</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -312,7 +312,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C5</id>
+				<id>C57</id>
 				<title>Does the pop-up window appears</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -333,7 +333,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C26</id>
+				<id>C58</id>
 				<title>Does label &quot;New message&quot; exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -357,7 +357,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C20</id>
+				<id>C59</id>
 				<title>Does &quot;Contact email&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -378,7 +378,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C21</id>
+				<id>C60</id>
 				<title>Does &quot;Contact name&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -399,7 +399,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C22</id>
+				<id>C61</id>
 				<title>Does &quot;Send message&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -421,7 +421,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C23</id>
+				<id>C62</id>
 				<title>Does &quot;Close&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -450,7 +450,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C6</id>
+				<id>C63</id>
 				<title>Does the pop-up window appears</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -470,7 +470,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C27</id>
+				<id>C64</id>
 				<title>Does label &quot;About us&quot; exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -495,7 +495,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C24</id>
+				<id>C65</id>
 				<title>Does video exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -517,7 +517,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C39</id>
+				<id>C66</id>
 				<title>Does video play</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -541,7 +541,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C25</id>
+				<id>C67</id>
 				<title>Does &quot;Close&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -568,7 +568,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C7</id>
+				<id>C68</id>
 				<title>Does the page loads</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -593,7 +593,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C8</id>
+				<id>C69</id>
 				<title>Does the pop-up window appears</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -612,7 +612,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C28</id>
+				<id>C70</id>
 				<title>Does label &quot;Log in&quot; exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -637,7 +637,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C12</id>
+				<id>C71</id>
 				<title>Does &quot;Username&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -658,7 +658,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C13</id>
+				<id>C72</id>
 				<title>Does &quot;Password&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -679,7 +679,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C14</id>
+				<id>C73</id>
 				<title>Does &quot;Log in&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -700,7 +700,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C15</id>
+				<id>C74</id>
 				<title>Does &quot;Close&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -727,7 +727,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C10</id>
+				<id>C75</id>
 				<title>Login with valid credentials</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -745,7 +745,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C11</id>
+				<id>C76</id>
 				<title>Login with invalid credentials</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -757,7 +757,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C36</id>
+				<id>C77</id>
 				<title>Login with wrong username</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -769,7 +769,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C37</id>
+				<id>C78</id>
 				<title>Login with wrong password</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -781,7 +781,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C38</id>
+				<id>C79</id>
 				<title>Login with empty credentials</title>
 												<template>Test Case (Text)</template>
 																<type>Other</type>
@@ -801,7 +801,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C9</id>
+				<id>C80</id>
 				<title>Does the pop-up window appears</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -821,7 +821,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C29</id>
+				<id>C81</id>
 				<title>Does label &quot;Sign up&quot; exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -843,7 +843,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C16</id>
+				<id>C82</id>
 				<title>Does &quot;Username&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -864,7 +864,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C17</id>
+				<id>C83</id>
 				<title>Does &quot;Password&quot; input field exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -885,7 +885,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C18</id>
+				<id>C84</id>
 				<title>Does &quot;Sign up&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -912,7 +912,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C19</id>
+				<id>C85</id>
 				<title>Does &quot;Close&quot; button exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -939,7 +939,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C31</id>
+				<id>C86</id>
 				<title>Signup with valid credentials</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -957,7 +957,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C33</id>
+				<id>C87</id>
 				<title>Signup with invalid credentials</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -969,7 +969,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C32</id>
+				<id>C88</id>
 				<title>Signup with wrong or already existed username</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -981,7 +981,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C34</id>
+				<id>C89</id>
 				<title>Signup with wrong or already existed password</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -993,7 +993,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C35</id>
+				<id>C90</id>
 				<title>Signup with empty credentials</title>
 												<template>Test Case (Text)</template>
 																<type>Other</type>
@@ -1015,7 +1015,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C50</id>
+				<id>C91</id>
 				<title>Does the slide-up images exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -1034,7 +1034,7 @@
 									</custom>
 							</case>
 															<case>
-				<id>C51</id>
+				<id>C92</id>
 				<title>Does arrows near the slide-up images work</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -1064,7 +1064,7 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C55</id>
+				<id>C93</id>
 				<title>Does the slide bar exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
