@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>Test Run 3/11/2023 - about us</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-11T08:57:38Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>5</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header-Home</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Contact</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Static test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-About us</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T1</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds> </preconds>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;About us&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C63</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:58:14Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:57:38Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T2</id>
+				<title>Does label &quot;About us&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds> </preconds>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+
+
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;About us&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C64</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:58:14Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:57:38Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T3</id>
+				<title>Does video exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then video should appear in the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C65</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:58:14Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:57:38Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T4</id>
+				<title>Does video play</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>And user clicks on the video</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the video should play</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C66</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:58:14Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:57:38Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;About us&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C67</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:58:14Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:57:38Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Header-Cart</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Log in</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-Sign up</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Body</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Footer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Side Bar</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>

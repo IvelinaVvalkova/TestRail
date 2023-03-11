@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R3</id>
+	<name>Test Run 3/11/2023 - header</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-11T09:01:01Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>8</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T15</id>
+				<title>Does the logo exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>   </preconds>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the logo should be on the top left of the page
+
+ ![](index.php?/attachments/get/844b1f19-b577-40aa-8271-46657cca5f05) 
+
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C48</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T16</id>
+				<title>Does the navigation menu exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the navigation menu should be on the top right of the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C49</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T17</id>
+				<title>Does &quot;Home&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Home&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C50</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T18</id>
+				<title>Does &quot;Contact&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Contact&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C51</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T19</id>
+				<title>Does &quot;About us&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;About us&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C52</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T20</id>
+				<title>Does &quot;Cart&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Cart&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C53</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T21</id>
+				<title>Does &quot;Log in&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Log in&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C54</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T22</id>
+				<title>Does &quot;Sign up&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Sign up&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C55</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:01:11Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:01:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+								<sections>
+		<section>
+		<name>Header-Home</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Contact</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Static test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-About us</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Cart</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Log in</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-Sign up</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Body</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Footer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Side Bar</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>

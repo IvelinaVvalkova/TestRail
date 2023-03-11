@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R4</id>
+	<name>Test Run 3/11/2023 - contact (static test cases)</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-11T09:02:51Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>6</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header-Home</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Contact</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Static test cases</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T30</id>
+				<title>Does the pop-up window appears</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>
+</preconds>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then pop-up window &quot;New message&quot; should appear on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C57</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T31</id>
+				<title>Does label &quot;New message&quot; exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds> </preconds>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then label &quot;New message&quot; should appear on the top left of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C58</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T32</id>
+				<title>Does &quot;Contact email&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Contact email&quot; field should appear in the modal window under the &quot;New message&quot; label</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C59</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T33</id>
+				<title>Does &quot;Contact name&quot; input field exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Contact name&quot; field should appear in the modal window under the &quot;Contact name&quot; field</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C60</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T34</id>
+				<title>Does &quot;Send message&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Send message&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C61</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T35</id>
+				<title>Does &quot;Close&quot; button exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When pop-up window appear on the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then &quot;Close&quot; button should appear on the bottom of the modal window</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C62</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T09:03:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T09:02:51Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-About us</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Cart</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Log in</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-Sign up</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Body</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Footer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Side Bar</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>

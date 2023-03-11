@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R2</id>
+	<name>Test Run 3/11/2023 - home</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-11T08:58:52Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>4</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T8</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C44</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:59:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:58:52Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T9</id>
+				<title>Does the page has header</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the header should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C45</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:59:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:58:52Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T10</id>
+				<title>Does the page has body</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then in the middle of the page the body should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C46</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:59:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:58:52Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T11</id>
+				<title>Does the page has footer</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And scrolls to the end of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the footer should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C47</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-11T08:59:01Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-11T08:58:52Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+								<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Header-Home</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Contact</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Static test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-About us</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Cart</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Header-Log in</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative test cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Header-Sign up</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive cases</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Negative cases</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Body</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Footer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Side Bar</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>
