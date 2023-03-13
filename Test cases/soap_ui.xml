@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S2</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Add</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C106</id>
+				<title>Sum of two integers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;7&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C107</id>
+				<title>Sum of two integers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C110</id>
+				<title>Sum of number and symbol</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;?&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (6, 32). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read1_Add()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C111</id>
+				<title>Sum of number and symbol check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;?&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive respose code &quot;HTTP/1.1 500 Internal Server Error&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C112</id>
+				<title>Sum of two numbers with .</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4.5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (6, 34). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read1_Add()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C113</id>
+				<title>Sum of two numbers with . check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4.5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 500 Internal Server Error&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Divide</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C108</id>
+				<title>Divide two integers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;3&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Divide&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;3&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C109</id>
+				<title>Divide two integers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;3&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C116</id>
+				<title>Divide number and symbol</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;?&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (6, 32). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read7_Divide()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer12.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C117</id>
+				<title>Divide number and symbol check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;?&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive respose code &quot;HTTP/1.1 500 Internal Server Error&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C118</id>
+				<title>Divide two numbers with .</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;0.5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (6, 34). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read7_Divide()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer12.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C119</id>
+				<title>Divide two numbers with . check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;0.5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 500 Internal Server Error&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C126</id>
+				<title>Divide two whole numbers where result is not whole</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;50&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;0.18&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Multiply</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C127</id>
+				<title>Multiply two integers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;30&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C128</id>
+				<title>Multiply two integers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C129</id>
+				<title>Multiply number and symbol</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;?&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;10&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (5, 32). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read5_Multiply()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer8.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C130</id>
+				<title>Multiply number and symbol check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;?&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;10&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive respose code &quot;HTTP/1.1 500 Internal Server Error&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C131</id>
+				<title>Multiply two numbers with .</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;7&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5.6&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (6, 34). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read5_Multiply()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer8.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C132</id>
+				<title>Multiply two numbers with . check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;7&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5.6&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 500 Internal Server Error&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Subtract</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C120</id>
+				<title>Subtract two integers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;20&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;16&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C121</id>
+				<title>Subtract two integers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;20&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C122</id>
+				<title>Subtract number and symbol</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;?&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (5, 32). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read3_Subtract()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer4.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C123</id>
+				<title>Subtract number and symbol check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;?&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive respose code &quot;HTTP/1.1 500 Internal Server Error&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C124</id>
+				<title>Subtract two numbers with .</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;15.5&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;9&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive error:
+&quot;
+&amp;amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;amp;gt;
+   &amp;amp;lt;soap:Body&amp;amp;gt;
+      &amp;amp;lt;soap:Fault&amp;amp;gt;
+         &amp;amp;lt;faultcode&amp;amp;gt;soap:Client&amp;amp;lt;/faultcode&amp;amp;gt;
+         &amp;amp;lt;faultstring&amp;amp;gt;System.Web.Services.Protocols.SoapException: Server was unable to read request. ---&amp;amp;gt; System.InvalidOperationException: There is an error in XML document (5, 35). ---&amp;amp;gt; System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp;amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Xml.XmlConvert.ToInt32(String s)
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1.Read3_Subtract()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.ArrayOfObjectSerializer4.Deserialize(XmlSerializationReader reader)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle)
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.ReadParameters()
+   at System.Web.Services.Protocols.WebServiceHandler.CoreProcessRequest()&amp;amp;lt;/faultstring&amp;amp;gt;
+         &amp;amp;lt;detail/&amp;amp;gt;
+      &amp;amp;lt;/soap:Fault&amp;amp;gt;
+   &amp;amp;lt;/soap:Body&amp;amp;gt;
+&amp;amp;lt;/soap:Envelope&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C125</id>
+				<title>Subtract two numbers with . check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two integers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;15.5&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;9&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 500 Internal Server Error&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
