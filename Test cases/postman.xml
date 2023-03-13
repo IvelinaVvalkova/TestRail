@@ -49,7 +49,12 @@
 										<steps_separated><step>
 <index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
 <step>
-<index>2</index><content>And user attaches body of JSON format withe the following value:</content><expected></expected></step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{Ivelina}
+&quot;
+
+</content><expected></expected></step>
 <step>
 <index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
 <step>
@@ -171,7 +176,7 @@
 						<cases>
 												<case>
 				<id>C100</id>
-				<title>GET single public crocodiles check response body</title>
+				<title>GET single public crocodiles check response body (value=2)</title>
 												<template>Test Case (Steps)</template>
 																<type>Functional</type>
 																<priority>High</priority>
@@ -189,30 +194,8 @@
 									</custom>
 							</case>
 															<case>
-				<id>C101</id>
-				<title>GET single public crocodiles with attached body</title>
-												<template>Test Case (Steps)</template>
-																<type>Functional</type>
-																<priority>High</priority>
-																				<estimate>300</estimate>
-																								<references></references>
-																				<custom>
-										<automation_type><id>0</id><value> None</value></automation_type>
-										<preconds>attached body as JSON</preconds>
-										<steps_separated><step>
-<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/2&quot; in Postman</content><expected></expected></step>
-<step>
-<index>2</index><content>And user attaches body of JSON format with the following value:</content><expected></expected></step>
-<step>
-<index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
-<step>
-<index>4</index><content>Then user should receive information for the 2nd public crocodile</content><expected></expected></step>
-</steps_separated>
-									</custom>
-							</case>
-															<case>
 				<id>C102</id>
-				<title>GET single public crocodiles check response code</title>
+				<title>GET single public crocodiles check response code (value=2)</title>
 												<template>Test Case (Steps)</template>
 																<type>Functional</type>
 																<priority>High</priority>
@@ -226,6 +209,98 @@
 <index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
 <step>
 <index>3</index><content>Then user should receive response code 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C133</id>
+				<title>GET single public crocodiles check response body (value=0)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/0&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following:
+
+&quot;
+
+{
+    &quot;detail&quot;: &quot;Not found.&quot;
+}
+&quot;
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be &quot;404 Not Found&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C136</id>
+				<title>GET single public crocodiles check response body (value=9)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>the list of public crocodiles contains 8 records</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/9&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following:
+
+&quot;
+
+{
+    &quot;detail&quot;: &quot;Not found.&quot;
+}
+&quot;
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be &quot;404 Not Found&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C101</id>
+				<title>GET single public crocodiles with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>attached body as JSON</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/2&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;detail&quot;: &quot;Not found.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive information for the 2nd public crocodile</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -244,17 +319,17 @@
 <step>
 <index>2</index><content>When user executes DELETE request to the given endpoint</content><expected></expected></step>
 <step>
-<index>3</index><content>
-
-</content><expected>Then user should receive response:
+<index>3</index><content>Then user should receive response:
 &quot;
 {
 
     &quot;detail&quot;: &quot;Method \&quot;DELETE\&quot; not allowed.&quot;
 }
-&quot;</expected></step>
+&quot;
+
+</content><expected></expected></step>
 <step>
-<index>4</index><content></content><expected>And respose code should be &quot;405 Method Not Allowed&quot;</expected></step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -274,16 +349,16 @@
 <index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
 <step>
 <index>3</index><content>
-
-</content><expected>Then user should receive response:
+Then user should receive response:
 &quot;
 {
 
     &quot;detail&quot;: &quot;Method \&quot;POST\&quot; not allowed.&quot;
 }
-&quot;</expected></step>
+&quot;
+</content><expected></expected></step>
 <step>
-<index>4</index><content></content><expected>And respose code should be &quot;405 Method Not Allowed&quot;</expected></step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -302,17 +377,17 @@
 <step>
 <index>2</index><content>When user executes PUT request to the given endpoint</content><expected></expected></step>
 <step>
-<index>3</index><content>
-</content><expected>Then user should receive response:
+<index>3</index><content>Then user should receive response:
 &quot;
 {
 
     &quot;detail&quot;: &quot;Method \&quot;PUT\&quot; not allowed.&quot;
 }
 &quot;
+</content><expected>
 </expected></step>
 <step>
-<index>4</index><content></content><expected>And respose code should be &quot;405 Method Not Allowed&quot;</expected></step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -323,11 +398,803 @@
 			<section>
 		<name>Registration and authentication</name>
 		<description></description>
-									</section>
+										<sections>
+		<section>
+		<name>Register a new user</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C138</id>
+				<title>POST register a new user check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/user/register/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;username&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;password&quot;: [
+        &quot;This field is required.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C139</id>
+				<title>POST register a new user check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/user/register/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C140</id>
+				<title>POST register a new user with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/user/register/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;password&quot;: &quot;w@ter&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;first_name&quot;: &quot;&quot;,
+    &quot;last_name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;201 Created&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login(Cookie/Session based auth)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C147</id>
+				<title>POST Cookie/Session based authentication login check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;username&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;password&quot;: [
+        &quot;This field is required.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C149</id>
+				<title>POST Cookie/Session based authentication login check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C148</id>
+				<title>POST Cookie/Session based authentication login with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;password&quot;: &quot;w@ter&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;id&quot;: 676661,
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;first_name&quot;: &quot;&quot;,
+    &quot;last_name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;&quot;,
+    &quot;date_joined&quot;: &quot;2023-03-13T10:56:46.174250Z&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C156</id>
+				<title>POST Cookie/Session based aut login with attached body (non registered user)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Ivelina&quot;,
+    &quot;password&quot;: &quot;qwerty&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;non_field_errors&quot;: [
+        &quot;Incorrect username or password.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;400 Bad Request&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Logout (Cookie/Session)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C150</id>
+				<title>POST Cookie/Session logout check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/logout/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receives an empty response
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C151</id>
+				<title>POST Cookie/Session logout check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/cookie/logout/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;200 OK&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login(HTTP basic-auth)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C153</id>
+				<title>POST HTTP basic-auth login check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/basic/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;username&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;password&quot;: [
+        &quot;This field is required.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C154</id>
+				<title>POST HTTP basic-auth login check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/basic/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C155</id>
+				<title>POST HTTP basic-auth login with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/basic/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;password&quot;: &quot;w@ter&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;id&quot;: 676661,
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;first_name&quot;: &quot;&quot;,
+    &quot;last_name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;&quot;,
+    &quot;date_joined&quot;: &quot;2023-03-13T10:56:46.174250Z&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login(Bearer/JWT token auth)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C157</id>
+				<title>POST Bearer/JWT token auth check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/token/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;username&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;password&quot;: [
+        &quot;This field is required.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C158</id>
+				<title>POST Bearer/JWT token auth check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/token/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C159</id>
+				<title>POST Bearer/JWT token auth with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/auth/token/login/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;username&quot;: &quot;Aguaphor&quot;,
+    &quot;password&quot;: &quot;w@ter&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3ODc5MzA4OSwianRpIjoiNmQ0NzA4ODI1M2ZjNDU3ODkyMWEzMGEzMjczNTc0MGEiLCJ1c2VyX2lkIjo2NzY2NjF9.fKmvwssKhclYrBb8pZ4Ud5IjWQDzdQcU6pd5tWyT6lo&quot;,
+    &quot;access&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4NzA2OTg5LCJqdGkiOiJmNTVmNzdmOGI5YWE0MmUzYWYwMjRhODI3YTI0ZTdjYiIsInVzZXJfaWQiOjY3NjY2MX0.d-e1vT0nxdwnGxfuAef_KYKs48iKZCf7ulgaetb-0Ns&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
 			<section>
 		<name>Private APIs</name>
 		<description></description>
-									</section>
+										<sections>
+		<section>
+		<name>List all my crocodiles</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C141</id>
+				<title>GET my crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive list of all his crocodiles</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C142</id>
+				<title>GET my crocodiles with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>attached body as JSON</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{Ivelina}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive list of all public crocodiles</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C143</id>
+				<title>GET my crocodiles check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C144</id>
+				<title>DELETE my crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes DELETE request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+
+    &quot;detail&quot;: &quot;Method \&quot;DELETE\&quot; not allowed.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C146</id>
+				<title>PUT my crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes PUT request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+
+    &quot;detail&quot;: &quot;Method \&quot;PUT\&quot; not allowed.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Single crocodile</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C145</id>
+				<title>GET my crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282059&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive date for the crocodile with id &quot;12282059&quot;
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Create a new crocodile</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C160</id>
+				<title>POST Create a new crocodile check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+    &quot;name&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;sex&quot;: [
+        &quot;This field is required.&quot;
+    ],
+    &quot;date_of_birth&quot;: [
+        &quot;This field is required.&quot;
+    ]
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;400Bad Request&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C161</id>
+				<title>POST Create a new crocodile with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{
+    &quot;name&quot;: &quot;Cookie&quot;,
+    &quot;sex&quot;: &quot;M&quot;,
+    &quot;date_of_birth&quot;: &quot;1998-10-02&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive the following value:
+&quot;
+{
+    &quot;id&quot;: 12282058,
+    &quot;name&quot;: &quot;Cookie&quot;,
+    &quot;sex&quot;: &quot;M&quot;,
+    &quot;date_of_birth&quot;: &quot;1998-10-02&quot;,
+    &quot;age&quot;: 24
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And response body should be &quot;201 Created&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Update my crocodile</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C162</id>
+				<title>PUT Update my crocodile check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes PUT request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive information for the selected crocodile
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C163</id>
+				<title>PATCH Update selected field on my crocodile check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes PATCH request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Remove my crocodile</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C164</id>
+				<title>DELETE Remove my crocodile check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes DELETE request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive information for the selected crocodile
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
 	</sections>
 			</section>
 			<section>
