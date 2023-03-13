@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R6</id>
+	<name>Test Run 3/13/2023 - List all public crocodiles</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-13T10:24:47Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>6</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Test-api.k6.io</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Public APIs</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>List all public crocodiles</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T52</id>
+				<title>GET public crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive list of all public crocodiles</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C94</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T53</id>
+				<title>GET public crocodiles with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<preconds>attached body as JSON</preconds>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{Ivelina}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive list of all public crocodiles</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C95</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T54</id>
+				<title>GET public crocodiles check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C96</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T55</id>
+				<title>DELETE public crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes DELETE request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+
+    &quot;detail&quot;: &quot;Method \&quot;DELETE\&quot; not allowed.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C97</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T56</id>
+				<title>POST public crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+
+    &quot;detail&quot;: &quot;Method \&quot;POST\&quot; not allowed.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C98</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T57</id>
+				<title>PUT public crocodiles check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes PUT request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+
+    &quot;detail&quot;: &quot;Method \&quot;PUT\&quot; not allowed.&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C99</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:24:58Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T10:24:47Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Single public crocodile</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Registration and authentication</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Register a new user</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Login(Cookie/Session based auth)</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Logout (Cookie/Session)</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Login(HTTP basic-auth)</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Login(Bearer/JWT token auth)</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Private APIs</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>List all your crocodiles</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Dummy.restapiexample.com</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>GET</name>
+		<description></description>
+									</section>
+		<section>
+		<name>POST</name>
+		<description></description>
+									</section>
+		<section>
+		<name>PUT</name>
+		<description></description>
+									</section>
+		<section>
+		<name>DELETE</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+</run>
