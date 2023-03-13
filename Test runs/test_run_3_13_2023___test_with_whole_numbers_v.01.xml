@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R5</id>
+	<name>Test Run 3/13/2023 - test with whole numbers v.01</name>
+	<description></description>
+	<config></config>
+	<createdon>2023-03-13T09:59:20Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>89</percent>
+			<count>8</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>11</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Add</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T37</id>
+				<title>Sum of two whole numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;7&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C106</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T38</id>
+				<title>Sum of two whole numbers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user adds two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Add&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;2&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C107</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Divide</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T39</id>
+				<title>Divide two whole numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;3&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Add&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Divide&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;3&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C108</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T40</id>
+				<title>Divide two whole numbers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;3&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C109</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T43</id>
+				<title>Divide two whole numbers where result is not whole</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user divides two numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Divide&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;9&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;50&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Divide&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;0.18&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C126</caseid>
+																<status>Failed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:01:30Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Failed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment>user receives the following result:
+“
+&amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;gt;
+   &amp;lt;soap:Body&amp;gt;
+      &amp;lt;DivideResponse xmlns=&quot;http://tempuri.org/&quot;&amp;gt;
+         &amp;lt;DivideResult&amp;gt;0&amp;lt;/DivideResult&amp;gt;
+      &amp;lt;/DivideResponse&amp;gt;
+   &amp;lt;/soap:Body&amp;gt;
+&amp;lt;/soap:Envelope&amp;gt;
+“
+</comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Given user has pasted the WSDL path </content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>When user divides two numbers with the following value:
+</content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Then user should receive the result </content><expected></expected><actual></actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Multiply</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T44</id>
+				<title>Multiply two whole numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;30&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C127</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T45</id>
+				<title>Multiply two whole numbers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user multiplies two whole with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Multiply&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;6&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;5&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Multiply&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C128</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Subtract</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T41</id>
+				<title>Subtract two whole numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two whole numbers with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;20&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the result &quot;16&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C120</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T42</id>
+				<title>Subtract two whole numbers check response code</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+															<automation_type><id>0</id><value> None</value></automation_type>
+															<steps_separated><step>
+<index>1</index><content>Given user has pasted the WSDL path &quot;http://www.dneonline.com/calculator.asmx?wsdl&quot; in SoapUI
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user subtracts two whole with the following value:
+&quot;
+&amp;amp;lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;&amp;amp;gt;
+   &amp;amp;lt;soapenv:Header/&amp;amp;gt;
+   &amp;amp;lt;soapenv:Body&amp;amp;gt;
+      &amp;amp;lt;tem:Subtract&amp;amp;gt;
+         &amp;amp;lt;tem:intA&amp;amp;gt;20&amp;amp;lt;/tem:intA&amp;amp;gt;
+         &amp;amp;lt;tem:intB&amp;amp;gt;4&amp;amp;lt;/tem:intB&amp;amp;gt;
+      &amp;amp;lt;/tem:Subtract&amp;amp;gt;
+   &amp;amp;lt;/soapenv:Body&amp;amp;gt;
+&amp;amp;lt;/soapenv:Envelope&amp;amp;gt;
+&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response code &quot;HTTP/1.1 200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C121</caseid>
+																<status>Passed</status>
+																<assignedto>Ivelina Valkova</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2023-03-13T10:00:06Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Passed</status>
+																								<assignedto>Ivelina Valkova</assignedto>
+																		<comment></comment>
+																		<version>.01</version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2023-03-13T09:59:20Z</createdon>
+																		<createdby>Ivelina Valkova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>
