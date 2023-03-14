@@ -117,7 +117,8 @@
 <step>
 <index>4</index><content>Then the logo should be on the top left of the page
 
- ![](index.php?/attachments/get/714ddcc2-834e-4868-93a3-ee716423ce21) 
+ ![](index.php?/attachments/get/844b1f19-b577-40aa-8271-46657cca5f05) 
+
 
 </content><expected></expected></step>
 </steps_separated>
@@ -306,7 +307,63 @@
 		<section>
 		<name>Dynamic test cases</name>
 		<description></description>
-									</section>
+						<cases>
+												<case>
+				<id>C172</id>
+				<title>Enter empty info and send it</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty information in the fields &quot;Contact Email&quot;, &quot;Contact Name&quot;, &quot;Message&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Send Message&quot; button
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive the following message:
+
+&quot;Thanks for the message!!&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C173</id>
+				<title>Enter and send message</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Contact&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters some information in the fields &quot;Contact Email&quot;, &quot;Contact Name&quot;, &quot;Message&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Send Message&quot; button
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive the following message:
+
+&quot;Thanks for the message!!&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
 			<section>
 		<name>Static test cases</name>
 		<description></description>
@@ -586,6 +643,124 @@
 </steps_separated>
 									</custom>
 							</case>
+															<case>
+				<id>C175</id>
+				<title>Add product to cart</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user selects product</content><expected></expected></step>
+<step>
+<index>3</index><content>And clicks on the button &quot;Add to cart&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the product should be added in the cart</content><expected></expected></step>
+<step>
+<index>5</index><content>Add the following message should appear
+
+&quot;Product added.&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C176</id>
+				<title>Does the Cart has products</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Cart&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page &quot;Cart&quot; should open</content><expected></expected></step>
+<step>
+<index>4</index><content>And there should be products in the cart</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C177</id>
+				<title>Add one product to cart several times</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user selects product that is already in the cart</content><expected></expected></step>
+<step>
+<index>3</index><content>And clicks on the button &quot;Add to cart&quot; to add it again</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the product should be added again in the cart</content><expected></expected></step>
+<step>
+<index>5</index><content>Add the following message should appear
+
+&quot;Product added.&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C178</id>
+				<title>Place order from the cart</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Cart&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>And clicks on the button &quot;Place Order&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>Then modal window &quot;Place order&quot; should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C179</id>
+				<title>Purchase order from the cart</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user is in the Cart</content><expected></expected></step>
+<step>
+<index>2</index><content>And in the model window &quot;Place Order&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user fills the filds</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on the button &quot;Purchase&quot;</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive message &quot;Thank you for your purchase&quot; 
+
+ ![](index.php?/attachments/get/94c5b3c7-8f68-417c-9c6c-b02bd88e29b0)
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
 								</cases>
 							</section>
 			<section>
@@ -736,6 +911,25 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters valid credentials
+
+username: ivi1
+pass: 123</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Log in&quot; button
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the profile page of the user should apear
+
+   ![](index.php?/attachments/get/822e1f65-f7db-4fd6-ab6c-1bff47f98e3f) 
+</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 								</cases>
@@ -746,18 +940,6 @@
 						<cases>
 												<case>
 				<id>C76</id>
-				<title>Login with invalid credentials</title>
-												<template>Test Case (Steps)</template>
-																<type>Other</type>
-																<priority>Medium</priority>
-																				<estimate></estimate>
-																								<references></references>
-																				<custom>
-										<automation_type><id>0</id><value> None</value></automation_type>
-									</custom>
-							</case>
-															<case>
-				<id>C77</id>
 				<title>Login with wrong username</title>
 												<template>Test Case (Steps)</template>
 																<type>Other</type>
@@ -766,6 +948,23 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters wrong username
+
+username: ivi2</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Log in&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive the following message:
+
+&quot;User does not exist.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 															<case>
@@ -778,18 +977,48 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters wrong password
+
+pass: 456</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Log in&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive the following message:
+
+&quot;Wrong password.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 															<case>
 				<id>C79</id>
 				<title>Login with empty credentials</title>
-												<template>Test Case (Text)</template>
+												<template>Test Case (Steps)</template>
 																<type>Other</type>
 																<priority>Medium</priority>
 																				<estimate></estimate>
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Log in&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty credentials</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Log in&quot; button
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should receive the following message:
+
+&quot;Please fill out Username and Password.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 								</cases>
@@ -948,6 +1177,21 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters credentials in the fields &quot;Username&quot; and &quot;Password&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Siqn up&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the new user should be created
+
+&quot;Sign up successful.&quot;
+
+</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 								</cases>
@@ -957,18 +1201,6 @@
 		<description></description>
 						<cases>
 												<case>
-				<id>C87</id>
-				<title>Signup with invalid credentials</title>
-												<template>Test Case (Steps)</template>
-																<type>Other</type>
-																<priority>Medium</priority>
-																				<estimate></estimate>
-																								<references></references>
-																				<custom>
-										<automation_type><id>0</id><value> None</value></automation_type>
-									</custom>
-							</case>
-															<case>
 				<id>C88</id>
 				<title>Signup with wrong or already existed username</title>
 												<template>Test Case (Steps)</template>
@@ -978,6 +1210,19 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters already existed username</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Siqn up&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the following message should be displayed:
+
+&quot;This user already exist.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 															<case>
@@ -990,18 +1235,47 @@
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters already existed password
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Siqn up&quot; button
+
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the following message should be displayed:
+
+&quot;This user already exist.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 															<case>
 				<id>C90</id>
 				<title>Signup with empty credentials</title>
-												<template>Test Case (Text)</template>
-																<type>Other</type>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
 																<priority>Medium</priority>
 																				<estimate></estimate>
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Sign up&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty credentials in the fields &quot;Username&quot; and &quot;Password&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Siqn up&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should receive the following messsage &quot;Please fill out Username and Password.&quot;</content><expected></expected></step>
+</steps_separated>
 									</custom>
 							</case>
 								</cases>
@@ -1058,7 +1332,30 @@
 			<section>
 		<name>Footer</name>
 		<description></description>
-									</section>
+						<cases>
+												<case>
+				<id>C174</id>
+				<title>Does the footer exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.demoblaze.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on the bottom of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the footer should be on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
 			<section>
 		<name>Side Bar</name>
 		<description></description>
