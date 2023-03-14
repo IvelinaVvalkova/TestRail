@@ -1131,7 +1131,7 @@ Then user should receive response:
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058/&quot; in Postman</content><expected></expected></step>
 <step>
 <index>2</index><content>When user executes PUT request to the given endpoint</content><expected></expected></step>
 <step>
@@ -1154,11 +1154,11 @@ Then user should receive response:
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058/&quot; in Postman</content><expected></expected></step>
 <step>
 <index>2</index><content>When user executes PATCH request to the given endpoint</content><expected></expected></step>
 <step>
-<index>3</index><content>Then</content><expected></expected></step>
+<index>3</index><content>Then the information for the selected crocodile are updated</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -1179,15 +1179,15 @@ Then user should receive response:
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058&quot; in Postman</content><expected></expected></step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/my/crocodiles/12282058/&quot; in Postman</content><expected></expected></step>
 <step>
 <index>2</index><content>When user executes DELETE request to the given endpoint</content><expected></expected></step>
 <step>
-<index>3</index><content>Then user should receive information for the selected crocodile
+<index>3</index><content>Then user should receive information that the selected crocodile is removed
 
 </content><expected></expected></step>
 <step>
-<index>4</index><content>And respose code should be &quot;200 OK&quot;</content><expected></expected></step>
+<index>4</index><content>And respose code should be &quot;204 No Content&quot;</content><expected>And respose code should be &quot;200 OK&quot;</expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -1204,11 +1204,163 @@ Then user should receive response:
 		<section>
 		<name>GET</name>
 		<description></description>
-									</section>
+						<cases>
+												<case>
+				<id>C165</id>
+				<title>GET all employee data check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://dummy.restapiexample.com/api/v1/employees&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive list of all employee data</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C166</id>
+				<title>GET single employee data check response body (value=2)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://dummy.restapiexample.com/api/v1/employee/2&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the information for the 2nd employee</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C167</id>
+				<title>GET single employee data check response body (value=25)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://dummy.restapiexample.com/api/v1/employee/25&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the following:
+&quot;
+{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: null,
+    &quot;message&quot;: &quot;Successfully! Record has been fetched.&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C168</id>
+				<title>GET single employee data check response body (value=2)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://dummy.restapiexample.com/api/v1/employee/2&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive the information for the 2nd employee</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
 			<section>
 		<name>POST</name>
 		<description></description>
-									</section>
+						<cases>
+												<case>
+				<id>C169</id>
+				<title>POST Create new record check response body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://dummy.restapiexample.com/api/v1/create&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+&quot;
+{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 5195
+    },
+    &quot;message&quot;: &quot;Successfully! Record has been added.&quot;
+}
+&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>And response code should be 200</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C170</id>
+				<title>GET public crocodiles with attached body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>attached body as JSON</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://test-api.k6.io/public/crocodiles/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>And user attaches body of JSON format with the following value:
+&quot;
+{Ivelina}
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>3</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>4</index><content>Then user should receive list of all public crocodiles</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
 			<section>
 		<name>PUT</name>
 		<description></description>
