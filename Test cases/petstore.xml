@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S4</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Everything about your Pets</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C180</id>
+				<title>Upload an image</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/1/uploadImage/&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>	
+Then user should be able to upload an image</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C181</id>
+				<title>Add a new pet to the store</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C182</id>
+				<title>Update an existing pet</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C183</id>
+				<title>GET Finds Pets by status = available</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=available&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive a list of all pets with status &quot;available&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And the response code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C199</id>
+				<title>GET Finds Pets by status = pending</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=pending&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive a list of all pets with status &quot;pending&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And the response code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C200</id>
+				<title>GET Finds Pets by status = sold</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=sold&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes GET request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive a list of all pets with status &quot;sold&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And the response code should be &quot;200 OK&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C201</id>
+				<title>POST Finds Pets by status = available</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=available&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+
+&quot;
+&amp;amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;amp;gt;
+&amp;amp;lt;apiResponse&amp;amp;gt;
+    &amp;amp;lt;type&amp;amp;gt;unknown&amp;amp;lt;/type&amp;amp;gt;
+&amp;amp;lt;/apiResponse&amp;amp;gt;
+&quot;
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C202</id>
+				<title>POST Finds Pets by status = pending</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=pending&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+
+&quot;
+&amp;amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;amp;gt;
+&amp;amp;lt;apiResponse&amp;amp;gt;
+    &amp;amp;lt;type&amp;amp;gt;unknown&amp;amp;lt;/type&amp;amp;gt;
+&amp;amp;lt;/apiResponse&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C203</id>
+				<title>POST Finds Pets by status = sold</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has opened endpoint &quot;https://petstore.swagger.io/v2/pet/findByStatus?status=sold&quot; in Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user executes POST request to the given endpoint</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should receive response:
+
+&quot;
+&amp;amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;amp;gt;
+&amp;amp;lt;apiResponse&amp;amp;gt;
+    &amp;amp;lt;type&amp;amp;gt;unknown&amp;amp;lt;/type&amp;amp;gt;
+&amp;amp;lt;/apiResponse&amp;amp;gt;
+&quot;
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>And respose code should be &quot;405 Method Not Allowed&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C184</id>
+				<title>Find pet by ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C185</id>
+				<title>Updates a pet in the store with form data</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C186</id>
+				<title>Deletes a pet</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Access to Petstore orders</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C187</id>
+				<title>Place an order for a pet</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C188</id>
+				<title>Find purchase order by ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C189</id>
+				<title>Delete purchase order by ID</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C190</id>
+				<title>Returns pet inventories by status</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Operations about user</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C191</id>
+				<title>Creates list of users with given input array</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C192</id>
+				<title>Creates list of users with given input array</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C193</id>
+				<title>Get user by user name</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C194</id>
+				<title>Updated user</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C195</id>
+				<title>Delete user</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C196</id>
+				<title>Logs user into the system</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C197</id>
+				<title>Logs out current logged in user session</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C198</id>
+				<title>Create user</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
