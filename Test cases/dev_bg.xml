@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Postman (API endpoints)</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C19</id>
+				<title>Open job (hypoport-sofia-eood-manual-qa-specialist)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/company/jobads/hypoport-sofia-eood-manual-qa-specialist/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the page for the following job</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Get subscription for the fist time</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+ ![](index.php?/attachments/get/0a047e90-0fb8-4b52-b1fd-814c914d6f6b) 
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>5</index><content>And user should receive the following message
+&quot;
+{
+    &quot;message&quot;: &quot;Успешно се абонирахте за най-новите обяви &amp;amp;lt;span&amp;amp;gt;от Quality Assurance&amp;amp;lt;/span&amp;amp;gt;&quot;,
+    &quot;status&quot;: &quot;success&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>refill?_locale=user</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/wp-json/contact-form-7/v1/contact-forms/7860/refill?_locale=user&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+ ![](index.php?/attachments/get/61d92bbf-3865-42d2-a233-3d14dd1f325e) 
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>5</index><content>And user should receive the following message
+&quot;
+{
+    &quot;quiz&quot;: {
+        &quot;robot-check&quot;: [
+            &quot;64+4=&quot;,
+            &quot;44b2d2e7e6972c89e22c0ce376c4449b&quot;
+        ]
+    }
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Report a problem with the ad</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-json/contact-form-7/v1/contact-forms/7860/feedback?_locale=user&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the the following message:
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Application form</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-json/contact-form-7/v1/contact-forms/9940/feedback?_locale=user&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the the following message:
+
+  
+ ![](index.php?/attachments/get/8d956e73-8b2e-4af3-88c2-9678d292d285)
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Search</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>Search jobs for QA</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs for QA</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C1</id>
+				<title>Search jobs for QA in Sofia</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs in Sofia</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Search jobs for QA in Sofia &amp; Remote</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs in Sofia and Remote</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Search jobs for QA in Sofia&amp;Remote and intern</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&amp;amp;_seniority=intern&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs for Sofia&amp;amp; Remote and intern</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Search jobs for Team Lead</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/automation-qa/?_seniority=grand-master&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Search jobs with salary</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_salary=1&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs with salary</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Search jobs without salary</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_salary=0&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs without salary</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Search job from product companies</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_company_category=23&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs from product companies</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Search job wth paid leave</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_paid_leave=77a&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs with paid leave</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Search job with employees count</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_it_employees_count=37&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Search jobs second page</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&amp;amp;_seniority=intern%2Cjunior&amp;amp;_paged=2&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs from the second page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login page</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C35</id>
+				<title>Login with valid credentials</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+ ![](index.php?/attachments/get/985f3669-9c17-4a51-bb35-6f6da62d9482) 
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should see the following message
+&quot;
+{&quot;loggedin&quot;:true,&quot;message&quot;:&quot;\u041f\u0440\u0435\u0437\u0430\u0440\u0435\u0436\u0434\u0430\u043d\u0435 \u043d\u0430
+\u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u0442\u0430&quot;}
+&quot;
+
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Negative test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C23</id>
+				<title>Search jobs for QA in Sofia&amp;Remote and intern - GET, DELETE, PUT request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&amp;amp;_seniority=intern&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user sends DELETE request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&amp;amp;_seniority=intern&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>When user sends PUT request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya%2Cremote&amp;amp;_seniority=intern&quot;</content><expected></expected></step>
+<step>
+<index>5</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>6</index><content>And user should receive the list of available jobs in Sofia&amp;amp;Remote and intern</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Get subscription again with the same email</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+  
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>5</index><content>And user should receive the following message
+&quot;
+{
+    &quot;message&quot;: &quot;Вече имаш такъв абонамент.&quot;,
+    &quot;status&quot;: &quot;duplicate&quot;
+}
+&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Get subscription for the fist time - GET request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+  
+
+
+
+
+  
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And user should receive the following message
+&quot;0&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Get subscription for the fist time without body</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has not a body
+
+  
+
+
+
+
+  
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+<step>
+<index>5</index><content>And user should receive the following message
+&quot;0&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Search page</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>Search jobs for QA in Sofia - GET request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs in Sofia</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Search jobs for QA in Sofia - DELETE request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends DELETE request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs in Sofia</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Search jobs for QA in Sofia - PUT request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends PUT request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>4</index><content>And user should receive the list of available jobs in Sofia</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Search jobs for QA in Sofia&amp;Remote - GET, DELETE, PUT request</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends GET request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>When user sends DELETE request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>4</index><content>When user sends PUT request &quot;https://dev.bg/company/jobs/quality-assurance/?_job_location=sofiya&quot;</content><expected></expected></step>
+<step>
+<index>5</index><content>Then response code should be 200</content><expected></expected></step>
+<step>
+<index>6</index><content>And user should receive the list of available jobs in Sofia&amp;amp;Remote</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C34</id>
+				<title>Login with wrong information</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+ ![](index.php?/attachments/get/162e59df-f308-4cbf-b0e8-8a0b878a19a5) 
+
+
+
+
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should see the following message
+
+
+&quot;0&quot;
+
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C36</id>
+				<title>Login with empty information</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Postman</content><expected></expected></step>
+<step>
+<index>2</index><content>When user sends POST request &quot;https://dev.bg/wp-admin/admin-ajax.php&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And the request has the following body
+
+    
+</content><expected></expected></step>
+<step>
+<index>4</index><content>Then response code should be &quot;400 Bad Request&quot;
+</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should see the following message
+
+
+&quot;0&quot;
+
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>UI</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Home page</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C37</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C38</id>
+				<title>Does the logo exist</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C39</id>
+				<title>Does the navigation menu exist</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C40</id>
+				<title>Does laguage tab exist in navigation menu</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C41</id>
+				<title>Does &quot;Log in&quot; exist in navigation menu</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C42</id>
+				<title>Does &quot;Create profile&quot; exist in navigation menu</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Create profile</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic test cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C29</id>
+				<title>Signup with valid info</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Create profile&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters valid information in all the fields</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Create profile&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the registration should be successful
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C26</id>
+				<title>Signup with empty info</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Create profile&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty information in the fields &quot;Name&quot;, &quot;Surname&quot;, &quot;Email&quot;, &quot;Password&quot;</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Create profile&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should see validation messages</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Don&apos;t mark the checkbox and send info</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Create profile&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user don&apos;t mark the checkbox &quot;I agree&quot;</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Create profile&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should see validation message
+
+&quot;Трябва да се съгласите с условията, преди да се регистрирате&quot;
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Enter empty info in the field for answering the question and send it</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Create profile&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty information in the field for answering the question</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Create profile&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should see the following message
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>Register with already existed email</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Create profile&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters in the field &quot;Email&quot; email that already existed</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Create profile&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then the user should see the following error
+
+  
+ ![](index.php?/attachments/get/27247a1c-9793-408e-8b7c-de57adc9f7e6) 
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Login</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Dynamic tests</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C31</id>
+				<title>Login with valid info and send it</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Login&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters valid information in the fields &quot;Email&quot; and &quot;Password&quot;</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Login&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then login should be successful
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative tests</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C32</id>
+				<title>Login with empty info</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Login&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters empty  information in the fields &quot;Email&quot; and &quot;Password&quot;</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Login&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should see the following message
+&quot;Wrong email or password&quot;
+
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>Login with wrong information</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>600</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://dev.bg/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>And clicked on &quot;Login&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>When user enters wrong information in the fields &quot;Email&quot; and &quot;Password&quot;</content><expected>
+
+</expected></step>
+<step>
+<index>4</index><content>And clicks on &quot;Login&quot; button</content><expected></expected></step>
+<step>
+<index>5</index><content>Then user should see the following message
+&quot;Wrong email or password&quot;
+
+
+  
+
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
