@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Postman (API endpoints)</name>
+		<description></description>
+									</section>
+			<section>
+		<name>UI</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Home</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Does the page has header</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the header should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Does the page has body</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then in the middle of the page the body should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Does the page has footer</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And scrolls to the end of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the footer should appear</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Header</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>Does the logo exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Unit testing</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>   </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the logo should be on the top left of the page
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Does the navigation menu exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the navigation menu should be on the top right of the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Does &quot;Work&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Work&quot; should be first in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Does &quot;Services&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Services&quot; should be in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Does &quot;Careers&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Careers&quot; should be in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Does &quot;About&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;About&quot; should be in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Does &quot;Contacts&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the label &quot;Contacts&quot; should be in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Does button &quot;Email us&quot; exist in navigation menu</title>
+												<template>Test Case (Steps)</template>
+																<type>Unit testing</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the button &quot;Email us&quot; should be last in the navigation menu</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Header-Work</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C13</id>
+				<title>Does the header-work loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Work&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Services</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C14</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Services&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page &quot;Services&quot; loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Careers</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C15</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Careers&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page &quot;Careers&quot; loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-About</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C16</id>
+				<title>Does the header-about loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;About&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Header-Contacts</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C17</id>
+				<title>Does the header-contacts loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Contacts&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Body</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Footer</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C18</id>
+				<title>Does the footer exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Static</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks on the bottom of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the footer should be on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
