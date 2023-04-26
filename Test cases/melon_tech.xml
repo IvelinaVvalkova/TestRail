@@ -11,16 +11,39 @@
 			<section>
 		<name>UI</name>
 		<description></description>
-										<sections>
+						<cases>
+												<case>
+				<id>C21</id>
+				<title>Does the map exists</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user has navigated to &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on &quot;Contacts&quot; link</content><expected></expected></step>
+<step>
+<index>3</index><content>Then on the page the user should see the map</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
 		<section>
-		<name>Home</name>
+		<name>Static tests</name>
 		<description></description>
 						<cases>
 												<case>
-				<id>C1</id>
-				<title>Does the page loads</title>
+				<id>C20</id>
+				<title>Does the body exist</title>
 												<template>Test Case (Steps)</template>
-																<type>Performance</type>
+																<type>Static</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -31,13 +54,15 @@
 <step>
 <index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
 <step>
-<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+<index>3</index><content>And looks on the middle of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the body should be on the page</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
 															<case>
-				<id>C2</id>
-				<title>Does the page has header</title>
+				<id>C18</id>
+				<title>Does the footer exist</title>
 												<template>Test Case (Steps)</template>
 																<type>Static</type>
 																<priority>High</priority>
@@ -46,14 +71,75 @@
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
-</content><expected></expected></step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
 <step>
 <index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
 <step>
-<index>3</index><content>And looks on the top of the page</content><expected></expected></step>
+<index>3</index><content>And looks on the bottom of the page</content><expected></expected></step>
 <step>
-<index>4</index><content>Then the header should appear</content><expected></expected></step>
+<index>4</index><content>Then the footer should be on the page</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Informal Review</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C23</id>
+				<title>Is the site user friendly</title>
+												<template>Test Case (Steps)</template>
+																<type>Informal Reviews</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Technical Review</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C24</id>
+				<title>Does the site contains spelling mistakes</title>
+												<template>Test Case (Text)</template>
+																<type>Technical Reviews</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Inspection</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>Does the page has header</title>
+												<template>Test Case (Steps)</template>
+																<type>Inspection</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user loads &quot;https://www.melontech.com/&quot;
+</content><expected></expected></step>
+<step>
+<index>2</index><content>When user looks on the top of the page</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the header should appear</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -61,14 +147,14 @@
 				<id>C3</id>
 				<title>Does the page has body</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
+<index>1</index><content>Given user has access ti Internet
 </content><expected></expected></step>
 <step>
 <index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
@@ -81,50 +167,19 @@
 				<id>C4</id>
 				<title>Does the page has footer</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
 										<steps_separated><step>
-<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;
+<index>1</index><content>Given user loads &quot;https://www.melontech.com/&quot;
 </content><expected></expected></step>
 <step>
-<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<index>2</index><content>When user scrolls to the end of the page</content><expected></expected></step>
 <step>
-<index>3</index><content>And scrolls to the end of the page</content><expected></expected></step>
-<step>
-<index>4</index><content>Then the footer should appear</content><expected></expected></step>
-</steps_separated>
-									</custom>
-							</case>
-								</cases>
-								<sections>
-		<section>
-		<name>Header</name>
-		<description></description>
-						<cases>
-												<case>
-				<id>C5</id>
-				<title>Does the logo exist</title>
-												<template>Test Case (Steps)</template>
-																<type>Unit testing</type>
-																<priority>High</priority>
-																				<estimate>300</estimate>
-																								<references></references>
-																				<custom>
-										<automation_type><id>0</id><value> None</value></automation_type>
-										<preconds>   </preconds>
-										<steps_separated><step>
-<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
-<step>
-<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
-<step>
-<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
-<step>
-<index>4</index><content>Then the logo should be on the top left of the page
-</content><expected></expected></step>
+<index>3</index><content>Then the footer should appear</content><expected></expected></step>
 </steps_separated>
 									</custom>
 							</case>
@@ -132,7 +187,7 @@
 				<id>C6</id>
 				<title>Does the navigation menu exist</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -153,7 +208,7 @@
 				<id>C7</id>
 				<title>Does &quot;Work&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -174,7 +229,7 @@
 				<id>C8</id>
 				<title>Does &quot;Services&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -195,7 +250,7 @@
 				<id>C9</id>
 				<title>Does &quot;Careers&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -216,7 +271,7 @@
 				<id>C10</id>
 				<title>Does &quot;About&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -237,7 +292,7 @@
 				<id>C11</id>
 				<title>Does &quot;Contacts&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -255,10 +310,33 @@
 									</custom>
 							</case>
 															<case>
+				<id>C5</id>
+				<title>Does the logo exist</title>
+												<template>Test Case (Steps)</template>
+																<type>Inspection</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>   </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>And looks to the top of the page</content><expected></expected></step>
+<step>
+<index>4</index><content>Then the logo should be on the top left of the page
+</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
 				<id>C12</id>
 				<title>Does button &quot;Email us&quot; exist in navigation menu</title>
 												<template>Test Case (Steps)</template>
-																<type>Unit testing</type>
+																<type>Inspection</type>
 																<priority>High</priority>
 																				<estimate>300</estimate>
 																								<references></references>
@@ -276,9 +354,78 @@
 									</custom>
 							</case>
 								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Dynamic tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C22</id>
+				<title>Does view open positions works</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds> </preconds>
+										<steps_separated><step>
+<index>1</index><content>Given user is on Careers web page - &quot;https://www.melontech.com/careers/working-for-melon&quot;</content><expected></expected></step>
+<step>
+<index>2</index><content>When user clicks on button &quot;View open positions&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then user should see all open positions</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
 								<sections>
 		<section>
-		<name>Header-Work</name>
+		<name>BlackBox tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Smoke test</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Does the page loads</title>
+												<template>Test Case (Steps)</template>
+																<type>Smoke</type>
+																<priority>High</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Given user has access to Internet</content><expected></expected></step>
+<step>
+<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
+<step>
+<index>3</index><content>Then the page loads without errors</content><expected></expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Non-functional</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Performance test</name>
 		<description></description>
 						<cases>
 												<case>
@@ -302,13 +449,7 @@
 </steps_separated>
 									</custom>
 							</case>
-								</cases>
-							</section>
-			<section>
-		<name>Header-Services</name>
-		<description></description>
-						<cases>
-												<case>
+															<case>
 				<id>C14</id>
 				<title>Does the page loads</title>
 												<template>Test Case (Steps)</template>
@@ -327,13 +468,7 @@
 </steps_separated>
 									</custom>
 							</case>
-								</cases>
-							</section>
-			<section>
-		<name>Header-Careers</name>
-		<description></description>
-						<cases>
-												<case>
+															<case>
 				<id>C15</id>
 				<title>Does the page loads</title>
 												<template>Test Case (Steps)</template>
@@ -352,13 +487,7 @@
 </steps_separated>
 									</custom>
 							</case>
-								</cases>
-							</section>
-			<section>
-		<name>Header-About</name>
-		<description></description>
-						<cases>
-												<case>
+															<case>
 				<id>C16</id>
 				<title>Does the header-about loads</title>
 												<template>Test Case (Steps)</template>
@@ -379,13 +508,7 @@
 </steps_separated>
 									</custom>
 							</case>
-								</cases>
-							</section>
-			<section>
-		<name>Header-Contacts</name>
-		<description></description>
-						<cases>
-												<case>
+															<case>
 				<id>C17</id>
 				<title>Does the header-contacts loads</title>
 												<template>Test Case (Steps)</template>
@@ -408,39 +531,26 @@
 							</case>
 								</cases>
 							</section>
-	</sections>
-			</section>
 			<section>
-		<name>Body</name>
-		<description></description>
-									</section>
-			<section>
-		<name>Footer</name>
+		<name>Compatibility test</name>
 		<description></description>
 						<cases>
 												<case>
-				<id>C18</id>
-				<title>Does the footer exist</title>
+				<id>C19</id>
+				<title>Is the page responsive</title>
 												<template>Test Case (Steps)</template>
-																<type>Static</type>
-																<priority>High</priority>
-																				<estimate>300</estimate>
+																<type>Compatibility</type>
+																<priority>Medium</priority>
+																				<estimate>1200</estimate>
 																								<references></references>
 																				<custom>
 										<automation_type><id>0</id><value> None</value></automation_type>
-										<steps_separated><step>
-<index>1</index><content>Given the adres &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
-<step>
-<index>2</index><content>When user loads &quot;https://www.melontech.com/&quot;</content><expected></expected></step>
-<step>
-<index>3</index><content>And looks on the bottom of the page</content><expected></expected></step>
-<step>
-<index>4</index><content>Then the footer should be on the page</content><expected></expected></step>
-</steps_separated>
 									</custom>
 							</case>
 								</cases>
 							</section>
+	</sections>
+			</section>
 	</sections>
 			</section>
 	</sections>
